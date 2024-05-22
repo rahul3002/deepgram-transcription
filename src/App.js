@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from "react";
+import Microphone from "./Components/Microphone";
+import "../src/assets/styles/Microphone.css";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Deepgram Transcription</h1>
       </header>
+      <Microphone />
     </div>
   );
 }
